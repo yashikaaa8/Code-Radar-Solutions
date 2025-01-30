@@ -1,9 +1,9 @@
 include <stdio.h>
 int main()
 {
-    printf("3.14");
-    scanf("%f,&float");
-    printf("float number is:%f",float)
+    float num;
+    scanf("%f,&num");
+    printf("float number is:%f\n",num)
     return 0;
 
 }
