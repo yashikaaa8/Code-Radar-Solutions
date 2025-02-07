@@ -10,7 +10,8 @@ int main() {
             printf("*");
 
         }
+         printf("%s");
     }
-    printf("%s");
+    
     return 0;
 }
