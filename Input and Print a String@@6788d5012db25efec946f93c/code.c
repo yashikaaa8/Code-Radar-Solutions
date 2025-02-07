@@ -3,10 +3,10 @@
 
 
 int main() {
-    char str[100];
+    char word[100];
     //printf("enter word");
-    scanf("%s",str);
-    printf("you entered %s\n",str);
+    scanf("%s",word);
+    printf("you entered %s\n",word);
     
     return 0;
 }
