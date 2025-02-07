@@ -5,8 +5,8 @@
 int main() {
     char word[100];
     //printf("enter word");
-    scanf("%s",word);
-    printf("you entered %s\n",word);
+    scanf("%s",&word);
+    printf(" %s\n",word);
     
     return 0;
 }
