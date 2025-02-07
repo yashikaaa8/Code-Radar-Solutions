@@ -4,13 +4,13 @@
 
 int main() {
     int N,i,j;
-    scanf("%d\n",&N);
+    scanf("%d",&N);
     for (i=1;i<N;i++){
         for (j=1;j<N;j++){
             printf("*");
 
         }
-         printf("%s");
+         printf("\n");
     }
     
     return 0;
