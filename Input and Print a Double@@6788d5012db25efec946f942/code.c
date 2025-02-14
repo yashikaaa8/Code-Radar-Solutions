@@ -4,4 +4,4 @@ int main(){
     scanf("%f",&number);
     printf("You entered: %.4f",number);
     return 0;
-    } 
+} 
