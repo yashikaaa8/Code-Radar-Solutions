@@ -2,8 +2,8 @@
 int main()
 {
     
-    float number = 3.14;
-    scanf("%f",&number);
+    float number;
+    scanf("%.2f",&number);
     
     return 0;
 
