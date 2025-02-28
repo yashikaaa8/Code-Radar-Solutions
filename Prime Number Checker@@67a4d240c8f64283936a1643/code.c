@@ -13,3 +13,5 @@ else{
     return 0;
 }
 }
+
+int isPrime(inta)
