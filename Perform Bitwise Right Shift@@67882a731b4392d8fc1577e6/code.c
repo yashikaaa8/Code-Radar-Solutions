@@ -6,4 +6,4 @@ int main(){
     c=a<<b;
     printf("%d",c);
     return 0;
-    }
+}
