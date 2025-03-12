@@ -3,7 +3,7 @@ int main(){
     int a;
     scanf("%d",&a);
     if(a==1){
-        printf("Mondya");
+        printf("Monday");
     }
     else if(a==2){
         printf("Tuesday");
