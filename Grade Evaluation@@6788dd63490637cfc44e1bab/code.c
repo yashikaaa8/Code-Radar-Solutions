@@ -8,13 +8,13 @@ int main(){
     else if(gr=='B'){
         printf("Good");
     }
-    else if(gr==C){
+    else if(gr=='C'){
         printf("Average");
     }
-    else if(gr==D){
+    else if(gr=='D'){
         printf("Below Average");
     }
-    else if(gr==F){
+    else if(gr=='F'){
         printf("Fail");
     }
     else{
