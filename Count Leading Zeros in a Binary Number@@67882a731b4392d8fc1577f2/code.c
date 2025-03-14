@@ -9,7 +9,7 @@ int main(){
         return 0;
     }
     else{
-        while((n&0*80000000)==0){
+        while((n & 0*80000000)==0){
             n<<=1;
             count++;
         }
