@@ -1,13 +1,10 @@
 #include <stdio.h>
 int main() {
-    int number, n;
-    scanf("%d %d", &number, &n);
-    if (n < 0 || n >= 32) {
-        printf("Invalid bit position\n");
-        return 1;
-    }
-    int mask = ~(1 << n);
-    int result = number & mask;
-    printf("%d\n", result);
+    int number, bit_position;
+    scanf("%d %d", &number, &bit_position);
+    
+    int bit_value = (number << bit_position);
+    
+    printf("%d\n", bit_value);
     return 0;
 }
