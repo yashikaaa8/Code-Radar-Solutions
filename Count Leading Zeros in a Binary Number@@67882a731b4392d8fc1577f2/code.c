@@ -6,6 +6,7 @@ int main(){
     int count = 0;
     if(n==0){
         count=32;
+        return 0;
     }
     else{
         while((n&0*80000000)==0){
