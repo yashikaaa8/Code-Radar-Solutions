@@ -21,7 +21,7 @@ int main() {
     reversed[length] = '\0';  // Null-terminate the reversed string
     
     // Output the reversed string
-    printf("Reversed string: %s\n", reversed);
+    printf(" %s\n", reversed);
     
     return 0;
 }
