@@ -5,6 +5,6 @@ int main(){
 char str[100];
 printf("enter a string");
 scanf("%99s",&str);
-printf("reversed string: %s\n",strrev(str));
+printf("reversed string: %s\n",strsep(str));
 return 0;
 }
