@@ -2,17 +2,18 @@
 #include <string.h>
 
 void reverseString(char str[]) {
-    int start = 0;
-    int end = strlen(str) - 1;
+    int length = strlen(str);
+    char reversed[length + 1];  // Array to store the reversed string
     
-    // Swap characters from the beginning and end
-    while (start < end) {
-        char temp = str[start];
-        str[start] = str[end];
-        str[end] = temp;
-        start++;
-        end--;
+    // Loop through the original string from end to start and copy to the new array
+    for (int i = 0; i < length; i++) {
+        reversed[i] = str[length - 1 - i];
     }
+    
+    reversed[length] = '\0';  // Null-terminate the reversed string
+    
+    // Copy the reversed string back into the original string
+    strcpy(str, reversed);
 }
 
 int main() {
@@ -22,15 +23,4 @@ int main() {
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
     
-    // Remove the newline character if it exists
-    str[strcspn(str, "\n")] = '\0';
-    
-    // Reverse the string
-    reverseString(str);
-    
-    // Output the reversed string
-    printf("Reversed string: %s\n", str);
-    
-    return 0;
-}
-
+    // Remove the newline cha
