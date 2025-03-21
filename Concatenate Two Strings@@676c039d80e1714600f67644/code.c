@@ -11,7 +11,7 @@ int main(){
         n--;
     }
     for(int i=0;i<n;i++){
-        if(str[i]! =' '){
+        if(str[i]! =''){
             str[q++]=str[i];
         }
     }
