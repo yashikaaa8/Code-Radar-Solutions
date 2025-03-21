@@ -16,7 +16,7 @@ int main() {
             str[q++] = str[i];
         }
     }
-    printf("%s", str1);
+    printf("%s", str);
 
     return 0;
 }
