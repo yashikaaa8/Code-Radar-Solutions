@@ -2,8 +2,8 @@
 #include <string.h>
 int main(){
     char *str = NULL;
-    scnf("%ms", &str);
-    int c=0;
+    scanf("%ms", &str);
+    int c= 0;
     int n=strlen(str);
     for(int i = 0 ; i<n ; i++){
          if(str[i]=='a' ||str[i]=='e' ||str[i]=='i' ||str[i]=='o'||str[i]=='u' ||
