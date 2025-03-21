@@ -4,6 +4,7 @@
 int main() {
     int q = 0;
     char str[100];
+    char str1[100];
     fgets(str, sizeof(str), stdin);
     int n = strlen(str);
     if (str[n-1] == '\n') {
@@ -15,9 +16,7 @@ int main() {
             str[q++] = str[i];
         }
     }
-
-    str[q] = '\0';
-    printf("%s", str);
+    printf("%s", str1);
 
     return 0;
 }
