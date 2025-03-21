@@ -2,7 +2,6 @@
 #include<string.h>
 
 int main(){
-    int q =0
     int q =0;
     char str[100];
     char str1[100];
