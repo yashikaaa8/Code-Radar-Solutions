@@ -14,7 +14,7 @@ void selectionSort(char arr[], int n) {
          if (minIndex != i) {
              temp = arr[i];
              arr[i] = arr[minIndex];
- @@ -20,9 +19,8 @@
+
      }
  }
  void printArray(char arr[], int n) {
