@@ -1,25 +1,36 @@
 #include <stdio.h>
-float ar(int length , int  breath){
-    float ty = length*breath;
-   return ty;
-}
-float pr(int length , int breath){
-    float s = length + breath;
-    float ui = 2*s;
-    return ui ;
-}
-int main() {
-    int n, length , breath;
-    float area , p;
-    scanf("%d" , &n);
-     for(int i =1 ; i<=n ; i++){
-         scanf("%d" , &length);
-         scanf("%d" , &breath);
-         area= ar(length , breath);
-         p= pr(length , breath);
-         printf("Rectangle %d: Area = %.2f, Perimeter = %.2f \n" , i  , area , p);
+#include <string.h>
 
-     }
+struct Book {
+    char title[50];
+    char author[50];
+    float price;
+};
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    struct Book books[n];
+    int i;
+    float w;
+
+    for (i = 0; i < n; i++) {
+        scanf("%s", books[i].title);
+        scanf("%s", books[i].author);
+        scanf("%f", &books[i].price);
+    }
+    scanf("%f" , &w);
+   
+ printf("Books above price %.2f:\n" , w);
+    for (i = 0; i < n; i++) {
+        if (books[i].price > w) { 
+        printf("Title: %s, Author: %s, Price: %.2f\n" , books[i].title , books[i].author , books[i].price);
+        }
+    }
+   
     
+ 
+
+
     return 0;
 }
