@@ -4,29 +4,33 @@
 int main() {
     char str1[100];
     fgets(str1, sizeof(str1), stdin);
+
+    // Remove newline if present
+    str1[strcspn(str1, "\n")] = '\0';
+
     int n = strlen(str1);
-    char str2[100];
-    int c = 0;
-    int max = 0;
-    int y = 0;
-    int start =0;
-    for (int i = 0; i<=n; i++) {
+    char str2[100];  // To store longest word
+    int c = 0, max = 0, y = 0, start = 0, maxStart = 0;
+
+    for (int i = 0; i <= n; i++) {
         if (str1[i] == ' ' || str1[i] == '\0') {
-          if(c>max){
-           for(int j = start; j<=i-1 ; j++){
-              str2[y]= str1[j];
-              y++;
-           }}
-           max=c;
-           c = 0;
-           start = i+1;
-           y  = 0;
-           
-        }
-        else{
+            if (c > max) {
+                max = c;
+                maxStart = start;
+            }
+            c = 0;
+            start = i + 1;
+        } else {
             c++;
         }
     }
-    printf("%s" , str2);
+
+    // Copy the longest word to str2
+    for (int i = 0; i < max; i++) {
+        str2[i] = str1[maxStart + i];
+    }
+    str2[max] = '\0';  // Null-terminate the string
+
+    printf("%s\n", str2);
     return 0;
 }
