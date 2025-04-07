@@ -17,7 +17,7 @@ int main() {
     }
 
     str1[j] = '\0';
-    printf("%s",str1);
+    printf(" %s", str1);
 
     return 0;
 }
